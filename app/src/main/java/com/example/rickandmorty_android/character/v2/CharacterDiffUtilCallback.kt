@@ -1,4 +1,4 @@
-package com.example.rickandmorty_android.character.native
+package com.example.rickandmorty_android.character.v2
 
 import androidx.recyclerview.widget.DiffUtil
 import com.example.rickandmorty_android.data.CharacterModel

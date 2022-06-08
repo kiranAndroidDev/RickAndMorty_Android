@@ -1,6 +1,9 @@
 package com.example.rickandmorty_android.di
 
-import com.example.rickandmorty_android.character.*
+import com.example.rickandmorty_android.character.CharacterRepo
+import com.example.rickandmorty_android.character.CharacterRepoImpl
+import com.example.rickandmorty_android.character.CharacterUseCase
+import com.example.rickandmorty_android.character.CharacterUseCaseImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

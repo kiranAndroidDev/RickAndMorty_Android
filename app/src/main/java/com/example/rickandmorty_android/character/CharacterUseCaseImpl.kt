@@ -1,7 +1,7 @@
 package com.example.rickandmorty_android.character
 
-import java.lang.Exception
 import javax.inject.Inject
+import kotlin.Exception
 
 class CharacterUseCaseImpl @Inject constructor(private val repo: CharacterRepo) : CharacterUseCase {
     override suspend fun getCharacters(): UIState {
@@ -14,6 +14,3 @@ class CharacterUseCaseImpl @Inject constructor(private val repo: CharacterRepo) 
     }
 }
 
-interface CharacterUseCase {
-    suspend fun getCharacters(): UIState
-}

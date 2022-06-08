@@ -10,6 +10,3 @@ class CharacterRepoImpl @Inject constructor(private val service: CharacterServic
     }
 }
 
-interface CharacterRepo {
-    suspend fun getCharactersFromServer(): List<CharacterModel>
-}

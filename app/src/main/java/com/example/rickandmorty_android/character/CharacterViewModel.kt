@@ -3,6 +3,7 @@ package com.example.rickandmorty_android.character
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -20,6 +21,7 @@ class CharacterViewModel @Inject constructor(private val useCase: CharacterUseCa
     fun getCharacters() {
         viewModelScope.launch {
             currentState.emit(UIState.Loading)
+            delay(1000)
             currentState.emit(useCase.getCharacters())
         }
     }

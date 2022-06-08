@@ -1,4 +1,4 @@
-package com.example.rickandmorty_android.character.native
+package com.example.rickandmorty_android.character.v2
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -14,7 +14,7 @@ class CharacterListAdapter :
     private lateinit var binding: CharacterListItemBinding
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
-        binding = CharacterListItemBinding.inflate(LayoutInflater.from(viewGroup.context))
+        binding = CharacterListItemBinding.inflate(LayoutInflater.from(viewGroup.context), viewGroup, false)
         return ViewHolder(binding)
     }
 
