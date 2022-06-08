@@ -14,7 +14,7 @@
             android:paddingTop="8dp"
             app:layout_constraintTop_toTopOf="parent"
             app:title="@string/toolbar_title"
-            android:background="@color/purple_500"
+            android:background="@color/cyan_500"
             app:titleTextColor="@color/white"
             app:layout_constraintLeft_toLeftOf="parent" />
 

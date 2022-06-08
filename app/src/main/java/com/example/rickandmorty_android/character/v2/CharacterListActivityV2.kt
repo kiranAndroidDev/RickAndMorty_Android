@@ -19,7 +19,7 @@ import kotlinx.coroutines.launch
 class CharacterListActivityV2 : AppCompatActivity() {
 
     private lateinit var binding: CharacterListActivityV2Binding
-    val viewModel: CharacterViewModel by viewModels()
+    private val viewModel: CharacterViewModel by viewModels()
 
     private lateinit var listAdapter: CharacterListAdapter
     override fun onCreate(savedInstanceState: Bundle?) {

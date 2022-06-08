@@ -19,12 +19,14 @@ import androidx.compose.runtime.LaunchedEffect
 import  com.example.rickandmorty_android.R
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.rickandmorty_android.character.UIState
 import com.example.rickandmorty_android.character.CharacterViewModel
 import com.example.rickandmorty_android.data.CharacterModel
+import com.example.rickandmorty_android.ui.theme.Cyan500
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
@@ -37,7 +39,12 @@ fun CharacterListScreen() {
     }
     Scaffold(
         scaffoldState = scaffoldState,
-        topBar = { TopAppBar(title = { Text(stringResource(id = R.string.toolbar_title)) }) },
+        topBar = {
+            TopAppBar(title = {
+                Text(stringResource(id = R.string.toolbar_title),
+                    color = Color.White)
+            }, backgroundColor = Cyan500)
+        },
         content = {
             when (val currentState = state) {
                 is UIState.Error -> {

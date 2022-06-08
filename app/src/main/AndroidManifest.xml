@@ -29,7 +29,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".character.v1.CharacterListActivityV1"
-            android:theme="@style/Theme.RickAndMorty_Android"/>
+            android:exported="true"
+            android:theme="@style/Theme.RickAndMorty_Android">
+        </activity>
     </application>
 
 </manifest>
