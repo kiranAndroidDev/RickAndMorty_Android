@@ -1,4 +1,4 @@
-package com.example.rickandmorty_android.character.v1.ui
+package com.example.rickandmorty_android.presentation.v1.ui
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Box
@@ -23,15 +23,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.rickandmorty_android.character.UIState
-import com.example.rickandmorty_android.character.CharacterViewModel
-import com.example.rickandmorty_android.data.CharacterModel
-import com.example.rickandmorty_android.ui.theme.Cyan500
+import com.example.rickandmorty_android.presentation.v2.UIState
+import com.example.rickandmorty_android.presentation.viewmodel.CharacterViewModel
+import com.example.rickandmorty_android.data.network.CharacterModel
+import com.example.rickandmorty_android.presentation.v1.ui.theme.Cyan500
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun CharacterListScreen() {
-    val viewModel: CharacterViewModel = viewModel()
+fun CharacterListScreen(viewModel: CharacterViewModel = viewModel()) {
     val state by viewModel.getState().collectAsState()
     val scaffoldState = rememberScaffoldState()
     LaunchedEffect(Unit) {

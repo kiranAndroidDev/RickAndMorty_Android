@@ -19,7 +19,7 @@
         android:theme="@style/Theme.RickAndMorty_Android"
         tools:targetApi="31">
         <activity
-            android:name=".character.v2.CharacterListActivityV2"
+            android:name=".presentation.v2.CharacterListActivityV2"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
@@ -28,7 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".character.v1.CharacterListActivityV1"
+        <activity android:name=".presentation.v1.CharacterListActivityV1"
             android:exported="true"
             android:theme="@style/Theme.RickAndMorty_Android">
         </activity>

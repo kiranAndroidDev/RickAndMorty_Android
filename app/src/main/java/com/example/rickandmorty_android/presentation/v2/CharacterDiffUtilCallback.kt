@@ -1,7 +1,7 @@
-package com.example.rickandmorty_android.character.v2
+package com.example.rickandmorty_android.presentation.v2
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.rickandmorty_android.data.CharacterModel
+import com.example.rickandmorty_android.data.network.CharacterModel
 
 val characterDiffUtilCallback = object : DiffUtil.ItemCallback<CharacterModel>() {
     override fun areItemsTheSame(oldItem: CharacterModel, newItem: CharacterModel): Boolean {

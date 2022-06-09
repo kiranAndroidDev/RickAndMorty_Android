@@ -1,4 +1,4 @@
-package com.example.rickandmorty_android.data
+package com.example.rickandmorty_android.data.network
 
 import retrofit2.http.GET
 

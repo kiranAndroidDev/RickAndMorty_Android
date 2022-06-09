@@ -1,4 +1,4 @@
-package com.example.rickandmorty_android.character
+package com.example.rickandmorty_android.presentation.v2
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter

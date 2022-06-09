@@ -1,5 +1,7 @@
-package com.example.rickandmorty_android.character
+package com.example.rickandmorty_android.usecase
 
+import com.example.rickandmorty_android.data.CharacterRepo
+import com.example.rickandmorty_android.presentation.v2.UIState
 import javax.inject.Inject
 import kotlin.Exception
 

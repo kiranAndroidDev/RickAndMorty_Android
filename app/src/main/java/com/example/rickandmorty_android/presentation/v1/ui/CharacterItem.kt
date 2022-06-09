@@ -1,4 +1,4 @@
-package com.example.rickandmorty_android.character.v1.ui
+package com.example.rickandmorty_android.presentation.v1.ui
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.TextUnitType
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.example.rickandmorty_android.data.CharacterModel
+import com.example.rickandmorty_android.data.network.CharacterModel
 
 const val STATUS = "STATUS :"
 

@@ -1,4 +1,4 @@
-package com.example.rickandmorty_android.character.v2
+package com.example.rickandmorty_android.presentation.v2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,8 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.rickandmorty_android.R
-import com.example.rickandmorty_android.character.CharacterViewModel
-import com.example.rickandmorty_android.character.UIState
+import com.example.rickandmorty_android.presentation.viewmodel.CharacterViewModel
 import com.example.rickandmorty_android.databinding.CharacterListActivityV2Binding
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint

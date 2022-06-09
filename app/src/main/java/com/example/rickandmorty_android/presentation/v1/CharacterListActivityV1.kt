@@ -1,9 +1,9 @@
-package com.example.rickandmorty_android.character.v1
+package com.example.rickandmorty_android.presentation.v1
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.rickandmorty_android.character.v1.ui.CharacterListScreen
+import com.example.rickandmorty_android.presentation.v1.ui.CharacterListScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

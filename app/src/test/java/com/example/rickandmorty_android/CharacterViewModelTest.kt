@@ -1,9 +1,9 @@
 package com.example.rickandmorty_android
 
-import com.example.rickandmorty_android.character.CharacterUseCaseImpl
-import com.example.rickandmorty_android.character.CharacterRepo
-import com.example.rickandmorty_android.character.CharacterViewModel
-import com.example.rickandmorty_android.character.UIState
+import com.example.rickandmorty_android.usecase.CharacterUseCaseImpl
+import com.example.rickandmorty_android.data.CharacterRepo
+import com.example.rickandmorty_android.presentation.viewmodel.CharacterViewModel
+import com.example.rickandmorty_android.presentation.v2.UIState
 import io.mockk.coEvery
 import io.mockk.mockk
 import junit.framework.Assert.assertEquals

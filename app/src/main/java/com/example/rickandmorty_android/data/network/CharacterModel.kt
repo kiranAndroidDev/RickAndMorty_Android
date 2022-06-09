@@ -1,4 +1,4 @@
-package com.example.rickandmorty_android.data
+package com.example.rickandmorty_android.data.network
 
 data class CharactersListModel (val results : List<CharacterModel>)
 data class CharacterModel(

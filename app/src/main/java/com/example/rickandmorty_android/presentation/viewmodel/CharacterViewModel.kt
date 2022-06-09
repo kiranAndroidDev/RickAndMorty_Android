@@ -1,9 +1,10 @@
-package com.example.rickandmorty_android.character
+package com.example.rickandmorty_android.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.rickandmorty_android.presentation.v2.UIState
+import com.example.rickandmorty_android.usecase.CharacterUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch

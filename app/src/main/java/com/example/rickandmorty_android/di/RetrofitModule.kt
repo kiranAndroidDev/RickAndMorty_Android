@@ -1,6 +1,6 @@
 package com.example.rickandmorty_android.di
 
-import com.example.rickandmorty_android.data.CharacterService
+import com.example.rickandmorty_android.data.network.CharacterService
 import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides

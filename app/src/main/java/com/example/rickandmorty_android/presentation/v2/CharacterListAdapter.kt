@@ -1,11 +1,11 @@
-package com.example.rickandmorty_android.character.v2
+package com.example.rickandmorty_android.presentation.v2
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rickandmorty_android.R
-import com.example.rickandmorty_android.data.CharacterModel
+import com.example.rickandmorty_android.data.network.CharacterModel
 import com.example.rickandmorty_android.databinding.CharacterListItemBinding
 
 class CharacterListAdapter :

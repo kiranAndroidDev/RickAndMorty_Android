@@ -1,6 +1,6 @@
-package com.example.rickandmorty_android.character
+package com.example.rickandmorty_android.presentation.v2
 
-import com.example.rickandmorty_android.data.CharacterModel
+import com.example.rickandmorty_android.data.network.CharacterModel
 
 sealed class UIState {
     object Loading : UIState()
