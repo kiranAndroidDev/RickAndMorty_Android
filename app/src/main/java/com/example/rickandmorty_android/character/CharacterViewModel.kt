@@ -21,7 +21,6 @@ class CharacterViewModel @Inject constructor(private val useCase: CharacterUseCa
     fun getCharacters() {
         viewModelScope.launch {
             currentState.emit(UIState.Loading)
-            delay(1000)
             currentState.emit(useCase.getCharacters())
         }
     }
